@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,*::after,*::before{
+  box-sizing:border-box;
+}
+
+html{
+  font-size:10px;
+}
+
+p{
+  color:hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+h1{
+  font-size:2.2rem;
+  margin-top:3rem;
+}
+
+body {
+  background-image: url(images/pattern-background-mobile.svg);
+  background-color:hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+@media (min-width:1440px) {
+  body{
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size:contain;
+  }
+}
+
+.card{
+  width:90vw;
+  height:auto;
+  border-radius:2.2em;
+  margin:10vh auto;
+  background-color:white;
+  text-align:center;
+  padding-bottom:0.5em;
+  max-width:375px;
+  min-width:310px;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius:2.2em 2.2em 0 0 ;
+}
+
+.summary-text{
+  width:80%;
+  margin:0 auto;
+}
+
+.summary-text p {
+  font-size:1.4rem;
+  line-height: 2.3rem;
+  letter-spacing:0.08rem;
+}
+
+.cart-item{
+  background-color:hsl(225, 100%, 98%);
+  width:85%;
+  margin:2.5em auto;
+  border-radius: 1.5em;
+  display:flex;
+  align-items: center;
+  padding:1.5rem;
+  padding-right:0;
+}
+
+.cart--col-20{
+  width:20%;
+}
+
+.cart--col-40{
+  width:40%;
+  padding-left: 1rem;
+}
+
+.cart--col-40 p{
+  padding:0;
+  margin:0;
+  font-size:1.4rem;
+}
+
+a{
+  color:hsl(245, 75%, 52%);
+  font-weight:700;
+  font-size:1.3rem;
+}
+
+a:active{
+  color:hsl(245, 65%, 65%);
+  text-decoration: none;
+}
+
+.strong{
+  font-weight: 700;
+  color:black;
+}
+
+button{
+  display:block;
+  margin:0 auto;
+  width:85%;
+  padding:1.3rem;
+  border:solid;
+  border-radius:0.6em;
+  font-weight: 700;
+  font-size:1.6rem;
+  cursor:pointer;
+  margin-bottom:2rem;
+}
+
+button:last-of-type {
+  margin-bottom:1.2rem;
+}
+
+.btn-accent{
+  background-color:hsl(245, 75%, 52%);
+  border-color:hsl(245, 75%, 52%);
+  color:white;
+  box-shadow:0 10px 20px -8px hsl(245, 65%, 65%);
+
+}
+
+.btn-accent:active{
+  background-color:hsl(245, 65%, 65%);
+  border-color:hsl(245, 65%, 65%);
+}
+
+.btn-simple{
+  background:transparent;
+  background-color:white;
+  border-color:white;
+  border-style:solid;
+  color:hsl(224, 23%, 55%);
+  font-size:1.5rem;
+}
+
+.btn-simple:active{
+  color:black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  min-width: 310px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
